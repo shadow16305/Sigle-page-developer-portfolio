@@ -1,0 +1,233 @@
+body {
+    font-family: 'Space Grotesk', sans-serif !important;
+    background-color: #151515 !important;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+}
+
+#xl {
+    font-weight: bold;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    max-width: 800px;
+}
+
+#lg {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+}
+
+#md {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@media (max-width: 768px) {
+    #xl {
+        font-size: 40px;
+        text-align: center;
+        line-height: 50px;
+    }
+}
+
+p {
+    color: #d9d9d9;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* Hero Section */
+header {
+    height: 90vh;
+}
+
+@media (max-width:768px) {
+    header {
+        height: 100vh;
+    }
+
+    .w-100 {
+        display: none;
+    }
+}
+
+/* Spacing */
+@media (min-width:768px) {
+    .mt-6 {
+        margin-top: 7.5rem !important;
+    }
+
+}
+
+@media (max-width:768px) {
+    .mt-md-6 {
+        margin-top: 0 !important;
+    }
+
+}
+
+.mt-md-6 {
+    margin-top: 7.5rem;
+}
+
+.mt-6 {
+    margin-top: 3rem;
+}
+
+.ms-6 {
+    margin-left: 4.5rem;
+}
+
+.ms-7 {
+    margin-left: 7.5rem;
+}
+
+
+
+/* Buttons And Links */
+
+.btn-primary-custom {
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    border-bottom: #4EE1A0 solid;
+    background: transparent;
+    transition: 0.25s;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.btn-primary-custom:hover {
+    color: #4EE1A0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* Images And SVG */
+
+#imgBannerDesktop {
+    position: absolute;
+    right: 180px;
+    top: 0px;
+    z-index: -1;
+    top: 0;
+}
+
+#imgBannerMobile {
+    display: none;
+}
+
+#imgDesktop {
+    display: block;
+}
+
+#imgMobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #imgBannerDesktop {
+        display: none;
+    }
+
+    #imgBannerMobile {
+        display: block;
+    }
+
+    #imgDesktop {
+        display: none;
+    }
+
+    #imgMobile {
+        display: block;
+    }
+
+    header section svg {
+        display: none;
+    }
+
+    main section svg {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    .card {
+        width: 40rem !important;
+    }
+}
+
+header section svg {
+    z-index: -1;
+    position: absolute;
+    left: -120px;
+    top: 140px;
+}
+
+main section svg {
+    z-index: -1;
+    position: absolute;
+    right: -220px;
+}
+
+#svgf {
+    z-index: 0;
+    position: absolute;
+    left: -180px;
+}
+
+.card img {
+    transition: 0.25s;
+}
+
+.card img:hover {
+    filter: grayscale();
+}
+
+/* Decorations */
+
+@media (max-width:768px) {
+    #lang {
+        border-top: #d9d9d9 solid 1px;
+    }
+}
+
+/* footer */
+footer {
+    background-color: #242424;
+}
+
+input {
+    background: transparent;
+    border: none;
+    border-bottom: #d9d9d9 solid;
+    color: #fff;
+    min-width: 500px;
+}
+
+input:focus {
+    outline: none;
+}
+
+@media (max-width:768px) {
+    input {
+        min-width: 0px;
+        max-width: 200px;
+    }
+}
